@@ -21,7 +21,7 @@ namespace ServerlessMicroservices.FunctionApp.Drivers
             ILogger log)
         {
             log.LogInformation("GetDrivers triggered....");
-
+            //Commenting to check whether commit triggers Configured Pipeline -> RideShare-DotnetFunctionApps-CI
             try
             {
                 await Utilities.ValidateToken(req);

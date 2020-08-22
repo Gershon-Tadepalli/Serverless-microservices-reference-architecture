@@ -1,6 +1,6 @@
 // Auth
-window.authClientId = '2739e8b5-13d3-4894-b710-544a80e0d255'
-window.authAuthority = 'https://contoso01239Tenant.b2clogin.com/tfp/contoso01239Tenant.onmicrosoft.com/b2c_1_default-signin/v2.0'
+window.authClientId = 'd0fd2f64-89f9-477e-84c1-804ebe3ac782'
+window.authAuthority = 'https://contoso01239tenant.b2clogin.com/tfp/contoso01239Tenant.onmicrosoft.com/b2c_1_default-sigin'
 window.authScopes = ['https://contoso01239Tenant.onmicrosoft.com/api/rideshare']
 window.authEnabled = true
 

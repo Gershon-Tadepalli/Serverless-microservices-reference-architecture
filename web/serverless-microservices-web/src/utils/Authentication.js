@@ -1,4 +1,4 @@
-import { UserAgentApplication, Logger } from 'msal';
+import { UserAgentApplication, Logger } from 'msal'
 
 const ACCESS_TOKEN = 'rideshare_access_token';
 const ID_TOKEN = 'rideshare_id_token';

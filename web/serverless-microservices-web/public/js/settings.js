@@ -1,7 +1,7 @@
 // Auth
 window.authClientId = 'd0fd2f64-89f9-477e-84c1-804ebe3ac782'
 window.authAuthority = 'https://contoso01239tenant.b2clogin.com/tfp/contoso01239Tenant.onmicrosoft.com/b2c_1_default-sigin'
-window.authScopes = ['https://contoso01239Tenant.onmicrosoft.com/api/rideshare']
+window.authScopes = ['https://contoso01239Tenant.onmicrosoft.com/api/rideshare', 'https://contoso01239Tenant.onmicrosoft.com/api/user_impersonation']
 window.authEnabled = true
 
 // API endpoints

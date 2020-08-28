@@ -92,6 +92,7 @@ namespace ServerlessMicroservices.Shared.Services
 
                 try
                 {
+                    _loggerService.Log($"Validating the token");
                     var principal = handler.ValidateToken(token, validationParams, out _);
                     _loggerService.Log($"Principal : {JsonConvert.SerializeObject(principal)}");
                     _loggerService.Log($"Validing the claims for scope with value : {_scope}");
@@ -102,7 +103,7 @@ namespace ServerlessMicroservices.Shared.Services
                 }
                 catch (Exception ex)
                 {
-                    _loggerService.Log($"Token failed to validate: {ex.Message}");
+                    _loggerService.Log($"Token failed to validate: {ex.Message}:: Type :{ex.GetType()}");
                 }
             }
 
@@ -112,7 +113,6 @@ namespace ServerlessMicroservices.Shared.Services
         async Task<TokenValidationParameters> GetValidationParameters()
         {
             var disco = await _discoveryCache.GetAsync();
-            _loggerService.Log("Error occured when finding discovery keys" + JsonConvert.SerializeObject(disco));
             if (disco.IsError)
             {
                 //_loggerService.LogError("Discovery error {0}", disco.Error);

@@ -93,6 +93,7 @@ namespace ServerlessMicroservices.Shared.Services
                 try
                 {
                     var principal = handler.ValidateToken(token, validationParams, out _);
+                    _loggerService.Log($"Principal : {JsonConvert.SerializeObject(principal)}");
                     _loggerService.Log($"Validing the claims for scope with value : {_scope}");
                     if (principal.HasClaim(ScopeClainType, _scope))
                     {

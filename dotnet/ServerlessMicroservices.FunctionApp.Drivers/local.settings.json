@@ -1,0 +1,19 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "EnableAuth": true,
+    "AuthorityUrl": "https://contoso01239tenant.b2clogin.com/contoso01239Tenant.onmicrosoft.com/b2c_1_default-sigin/v2.0/",
+    "ApiApplicationId": "d0fd2f64-89f9-477e-84c1-804ebe3ac782",
+    "ApiScopeName": "rideshare",
+    "DocDbRideShareMainCollectionName": "Main",
+    "DocDbRideShareDatabaseName": "RideShare",
+    "DocDbConnectionStringKey": "AccountEndpoint=https://ridesharedata-ger.documents.azure.com:443/;AccountKey=4zUe9szNmMfSA9gEY3dZPxuiXikzBFnAR1OQswsVXaxsWr451G8cAhnfyBdFNSapdrKXYOInQ7Gv7aPFZdS2MQ==;",
+    "DocDbApiKey": "4zUe9szNmMfSA9gEY3dZPxuiXikzBFnAR1OQswsVXaxsWr451G8cAhnfyBdFNSapdrKXYOInQ7Gv7aPFZdS2MQ==",
+    "DocDbEndpointUri": "https://ridesharedata-ger.documents.azure.com:443/",
+    "DocDbThroughput":  "400"
+
+  },
+  "Host": {
+    "CORS": "*"
+  }
+}

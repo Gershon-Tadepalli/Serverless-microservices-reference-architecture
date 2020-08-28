@@ -56,6 +56,7 @@ namespace ServerlessMicroservices.Shared.Services
         public async Task<ClaimsPrincipal> AuthenticateRequest(HttpRequest request)
         {
             var token = ExtractBearerToken(request);
+            _loggerService.Log("Extracted Token");
             if (token != null)
             {
                 var principal = await ValidateJwt(token);
@@ -91,6 +92,7 @@ namespace ServerlessMicroservices.Shared.Services
                 try
                 {
                     var principal = handler.ValidateToken(token, validationParams, out _);
+                    _loggerService.Log($"Validing the claims for scope with value : {_scope}");
                     if (principal.HasClaim(ScopeClainType, _scope))
                     {
                         return principal;
@@ -98,7 +100,7 @@ namespace ServerlessMicroservices.Shared.Services
                 }
                 catch (Exception ex)
                 {
-                    //_loggerService.LogError("Token failed to validate: {0}", ex.Message);
+                    _loggerService.Log($"Token failed to validate: {ex.Message}");
                 }
             }
 
@@ -108,6 +110,7 @@ namespace ServerlessMicroservices.Shared.Services
         async Task<TokenValidationParameters> GetValidationParameters()
         {
             var disco = await _discoveryCache.GetAsync();
+            _loggerService.Log("Error occured when finding discovery keys" + disco.Error);
             if (disco.IsError)
             {
                 //_loggerService.LogError("Discovery error {0}", disco.Error);

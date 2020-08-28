@@ -7,6 +7,7 @@ using IdentityModel;
 using IdentityModel.Client;
 using Microsoft.AspNetCore.Http;
 using Microsoft.IdentityModel.Tokens;
+using Newtonsoft.Json;
 
 namespace ServerlessMicroservices.Shared.Services
 {
@@ -110,7 +111,7 @@ namespace ServerlessMicroservices.Shared.Services
         async Task<TokenValidationParameters> GetValidationParameters()
         {
             var disco = await _discoveryCache.GetAsync();
-            _loggerService.Log("Error occured when finding discovery keys" + disco.Error);
+            _loggerService.Log("Error occured when finding discovery keys" + JsonConvert.SerializeObject(disco));
             if (disco.IsError)
             {
                 //_loggerService.LogError("Discovery error {0}", disco.Error);

@@ -1,0 +1,26 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=ridesharefuncstoreger;AccountKey=J7QNCk7xCbvf0qVkjYAOtq+t2kwC/l9f9YpHXYVg7DGALlOFbU2+JQ/OVNeM+65sQR+atW12URgTcYsmEUfZIQ==;EndpointSuffix=core.windows.net",
+    "TripDemosQueue": "trip-demos",
+    "TripDriversQueue": "trip-drivers",
+    "TripManagersQueue": "trip-managers",
+    "TripMonitorsQueue": "trip-monitors",
+    "TripMonitorIntervalInSeconds": "10",
+    "TripMonitorMaxIterations": "20",
+    "TripExternalizationsEventGridTopicUrl": "https://rideshareexternalizations-ger.eastus-1.eventgrid.azure.net/api/events",
+    "TripExternalizationsEventGridTopicApiKey": "dgpAaggnEDznr09ZF/BitWS9Yfm8SUTyDVDGzdA2oLM=",
+    "IsPersistDirectly": true,
+    "InsightsInstrumentationKey": "c592b5a7-dd07-4b12-8cd8-44fc8eacd898",
+    "DriversLocationRadiusInMiles": "15",
+    "DriversAcknowledgeMaxWaitPeriodInSeconds": "120",
+    "APPINSIGHTS_INSTRUMENTATIONKEY": "c592b5a7-dd07-4b12-8cd8-44fc8eacd898",
+    "AzureWebJobsDashboard": "DefaultEndpointsProtocol=https;AccountName=ridesharefuncstoreger;AccountKey=J7QNCk7xCbvf0qVkjYAOtq+t2kwC/l9f9YpHXYVg7DGALlOFbU2+JQ/OVNeM+65sQR+atW12URgTcYsmEUfZIQ==;EndpointSuffix=core.windows.net",
+    "DocDbRideShareMainCollectionName": "Main",
+    "DocDbRideShareDatabaseName": "RideShare",
+    "DocDbConnectionStringKey": "AccountEndpoint=https://ridesharedata-ger.documents.azure.com:443/;AccountKey=4zUe9szNmMfSA9gEY3dZPxuiXikzBFnAR1OQswsVXaxsWr451G8cAhnfyBdFNSapdrKXYOInQ7Gv7aPFZdS2MQ==;",
+    "DocDbApiKey": "4zUe9szNmMfSA9gEY3dZPxuiXikzBFnAR1OQswsVXaxsWr451G8cAhnfyBdFNSapdrKXYOInQ7Gv7aPFZdS2MQ==",
+    "DocDbEndpointUri": "https://ridesharedata-ger.documents.azure.com:443/",
+    "DocDbThroughput": "400"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=ridesharefuncstoreger;AccountKey=J7QNCk7xCbvf0qVkjYAOtq+t2kwC/l9f9YpHXYVg7DGALlOFbU2+JQ/OVNeM+65sQR+atW12URgTcYsmEUfZIQ==;EndpointSuffix=core.windows.net",
+    "AuthorityUrl": "https://contoso01239tenant.b2clogin.com/contoso01239Tenant.onmicrosoft.com/b2c_1_default-sigin/v2.0/",
+    "AzureSignalRConnectionString": "Endpoint=https://rideshare-ger.service.signalr.net;AccessKey=rXhz2ErktQPqEpuodLaa1AO0NvTCBziI4u/33/OwmZI=;Version=1.0;",
+    "ApiApplicationId": "d0fd2f64-89f9-477e-84c1-804ebe3ac782",
+    "ApiScopeName": "rideshare",
+    "TripDemosQueue": "trip-demos",
+    "TripDriversQueue": "trip-drivers",
+    "TripManagersQueue": "trip-managers",
+    "TripMonitorsQueue": "trip-monitors",
+    "TripMonitorIntervalInSeconds": "10",
+    "TripMonitorMaxIterations": "20",
+    "IsPersistDirectly": true,
+    "InsightsInstrumentationKey": "c592b5a7-dd07-4b12-8cd8-44fc8eacd898",
+    "DriversLocationRadiusInMiles": "15",
+    "DriversAcknowledgeMaxWaitPeriodInSeconds": "120",
+    "APPINSIGHTS_INSTRUMENTATIONKEY": "c592b5a7-dd07-4b12-8cd8-44fc8eacd898",
+    "AzureWebJobsDashboard": "DefaultEndpointsProtocol=https;AccountName=ridesharefuncstoreger;AccountKey=J7QNCk7xCbvf0qVkjYAOtq+t2kwC/l9f9YpHXYVg7DGALlOFbU2+JQ/OVNeM+65sQR+atW12URgTcYsmEUfZIQ==;EndpointSuffix=core.windows.net",
+    "DocDbRideShareMainCollectionName": "Main",
+    "DocDbRideShareDatabaseName": "RideShare",
+    "DocDbConnectionStringKey": "AccountEndpoint=https://ridesharedata-ger.documents.azure.com:443/;AccountKey=4zUe9szNmMfSA9gEY3dZPxuiXikzBFnAR1OQswsVXaxsWr451G8cAhnfyBdFNSapdrKXYOInQ7Gv7aPFZdS2MQ==;",
+    "DocDbApiKey": "4zUe9szNmMfSA9gEY3dZPxuiXikzBFnAR1OQswsVXaxsWr451G8cAhnfyBdFNSapdrKXYOInQ7Gv7aPFZdS2MQ==",
+    "DocDbEndpointUri": "https://ridesharedata-ger.documents.azure.com:443/",
+    "DocDbThroughput": "400",
+    "EnableAuth": false,
+    "IsEnqueueToOrchestrators": true,
+    "SqlConnectionString": "Server=tcp:rideshare-db-ger.database.windows.net,1433;Initial Catalog=RideShare;Persist Security Info=False;User ID=gershon;Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+  },
+  "Host": {
+    "CORS": "http://localhost:6420"
+  }
+}
